@@ -28,3 +28,14 @@ public class Item {
         return this.quality;
     }
 }
+
+class Normal_item extends Item {
+    public Normal_item(String name, Integer sell_in, Integer quality) {
+        super(name, sell_in, quality);
+
+    }
+
+    public Integer set_sell_in() {
+        return getSell_in() - 1;
+    }
+}
