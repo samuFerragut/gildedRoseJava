@@ -29,4 +29,20 @@ public class NormalItemTest {
         assertEquals(9, normal.getSell_in(),0);
         assertEquals(19, normal.getQuality(), 0);
     }
+
+    @Test
+    public void updateQualityNormalItemSellInCERO() {
+        NormalItem normal = new NormalItem("+5 Dexterity Vest", 0, 20);
+        normal.updateQuality();
+        assertEquals(-1, normal.getSell_in(), 0);
+        assertEquals(18, normal.getQuality(), 0);
+    }
+
+    @Test
+    public void updateQualityNormalItemQualityCERO() {
+        NormalItem normal = new NormalItem("+5 Dexterity Vest", 10, 0);
+        normal.updateQuality();
+        assertEquals(9, normal.getSell_in(), 0);
+        assertEquals(0, normal.getQuality(), 0);
+    }
 }
