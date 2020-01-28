@@ -21,4 +21,12 @@ public class NormalItemTest {
         NormalItem normal = new NormalItem("+5 Dexterity Vest", 10, 20);
         System.out.println(normal.toString());
     }
+
+    @Test
+    public void updateQualityNormalItem() {
+        NormalItem normal = new NormalItem("+5 Dexterity Vest", 10, 20);
+        normal.updateQuality();
+        assertEquals(9, normal.getSell_in(),0);
+        assertEquals(19, normal.getQuality(), 0);
+    }
 }
