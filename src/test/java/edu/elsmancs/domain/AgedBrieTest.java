@@ -44,4 +44,11 @@ public class AgedBrieTest {
         assertEquals(-1, cheese.getSell_in(), 0);
         assertEquals(2, cheese.getQuality(), 0);
     }
+    @Test
+    public void updateQualityAgedBrieTerminaCERO() {
+        AgedBrie cheese = new AgedBrie("Aged Brie", 1, 0);
+        cheese.updateQuality();
+        assertEquals(0, cheese.getSell_in(), 0);
+        assertEquals(1, cheese.getQuality(), 0);
+    }
 }
