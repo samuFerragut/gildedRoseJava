@@ -26,10 +26,11 @@ public class NormalItem {
     }
 
     public void setSell_in() {
-        item.setSell_in();
+    item.setSell_in();
     }
 
-    public int getQuality() {
+    public int getQuality()
+    {
         return item.getQuality();
     }
 
