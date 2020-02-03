@@ -53,7 +53,7 @@ public class NormalItem {
         } else {
             computeQuality(-2);
         }
-        item.setSell_in();
+        setSell_in();
     }
 }
 
